@@ -1,0 +1,41 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add your own global styles below */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Theme styles */
+.light {
+  --bg-color: #f3f4f6; /* gray-100 */
+  --text-color: #1f2937; /* gray-900 */
+  --card-bg: #ffffff;
+  --card-text: #1f2937;
+  --input-bg: #ffffff;
+  --input-border: #d1d5db; /* gray-300 */
+}
+
+.dark {
+  --bg-color: #1f2937; /* gray-900 */
+  --text-color: #f3f4f6; /* gray-100 */
+  --card-bg: #374151; /* gray-700 */
+  --card-text: #f3f4f6;
+  --input-bg: #4b5563; /* gray-600 */
+  --input-border: #6b7280; /* gray-500 */
+}
+
+body.light {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.dark {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
